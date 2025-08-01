@@ -21,7 +21,7 @@ import androidx.compose.ui.unit.sp
 
 @Composable
 fun TheCounterApp(/*modifier: Modifier*/){
-    var counter = remember { mutableStateOf(0) }
+    val counter = remember { mutableStateOf(0) }
     fun increment(){
         counter.value++
     }
